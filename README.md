@@ -78,6 +78,7 @@ A análise seguiu um fluxo rigoroso de Engenharia de Dados e Análise Descritiva
 * `01_criacao_base_dados.sql`: Criação da Base de dados e do Schema.
 * `02_auditoria_limpeza.sql`: Scripts de auditoria e correções.
 * `03_analise_dados.sql`: Queries consolidadas de análise de dados.
+* `04 - Global_Cybersecurity_Threats_2015-2024.csv`: Dataset original (fonte de dados bruta).
 
 ## COMO EXECUTAR ESTE PROJETO
 
@@ -91,7 +92,7 @@ Para reproduzir os resultados, você precisará do **SQL Server** e do **SQL Ser
 **Passo 2: Ingestão de Dados (ETL)**
 Como o dataset original é um arquivo CSV, realize a importação via Wizard:
 1. No SSMS, clique com o botão direito no banco `Cybersecurity_Base`, vá em **Tasks** e selecione **Import Flat File**.
-2. Selecione o arquivo CSV baixado neste repositório.
+2. Selecione o arquivo `04 - Global_Cybersecurity_Threats_2015-2024.csv` baixado neste repositório.
 3. **Importante:** Na etapa de seleção de tabela, escolha a tabela existente `CB.Global_Cybersecurity_Threats` (não crie uma nova).
 4. Conclua a importação.
 
